@@ -13,3 +13,8 @@ void main(){
   String formattedDate = DateFormat('yyyy-MM-dd – kk:mm').format(now);
   print(('Formatted date and time: $formattedDate'));
 }
+
+// Parsing a date string
+  String dateString = '2024-09-10 14:30';
+  DateTime parsedDate = DateFormat('yyyy-MM-dd HH:mm').parse(dateString);
+  print('Parsed date and time: $parsedDate');
